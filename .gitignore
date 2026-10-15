@@ -1,0 +1,30 @@
+# Files git should not track. One pattern per line; lines starting with # are comments.
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Operating system and editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets: never commit passwords or API keys
+.env
+
+# Claude Code personal settings (the shared CLAUDE.md is still tracked)
+.claude/settings.local.json
+
+# Data and outputs: decide with your advisor whether these belong in git.
+# Large or private data usually doesn't. Remove the # to ignore a folder.
+# data/
+# outputs/
